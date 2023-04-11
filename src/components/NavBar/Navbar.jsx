@@ -13,7 +13,7 @@ export default function Navbar() {
 
       <div className="logo-container">
         <img src={logo} alt="" />
-        <span>Sushi-App</span>
+        <span>Sushiapp</span>
       </div>
 
       <div className="sales">

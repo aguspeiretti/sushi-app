@@ -4,6 +4,7 @@ import Navbar from "../NavBar/Navbar";
 import { data } from "../../productos";
 import Cards from "../Cards/Cards";
 import promotion from "../../assets/foodImg/promotion.png";
+import CardSug from "../CardSuggestion/CardSug";
 
 const Home = () => {
   return (
@@ -17,7 +18,7 @@ const Home = () => {
           <button className="category-button special">All</button>
           <button className="category-button">Rolls</button>
           <button className="category-button">Salads</button>
-          <button className="category-button">recomended</button>
+          <button className="category-button">Recomended</button>
         </div>
         <div className="product-container">
           {data.map((p) => (
@@ -36,9 +37,11 @@ const Home = () => {
       </div>
       <div className="thirt-seccion">
         <div className="suggestion">
-          <p>suggestion for you</p>
+          <p>Suggestion for you</p>
         </div>
-        <div className="suggested"></div>
+        <div className="suggested">
+          <CardSug product={data.find((e) => e.suggested === true)} />
+        </div>
       </div>
     </div>
   );

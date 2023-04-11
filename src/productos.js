@@ -16,6 +16,7 @@ export const data = [
     type: "Roll",
     price: 120,
     img: require("./assets/foodImg/sushi1.png"),
+    suggested: true,
   },
   {
     name: "Cali Feel",

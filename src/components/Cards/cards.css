@@ -5,6 +5,8 @@
   background-color: rgb(32, 32, 32);
   margin-left: 15px;
   cursor: pointer;
+  -webkit-box-shadow: 1px 3px 19px -3px #000000;
+  box-shadow: 1px 3px 19px -3px #000000;
 }
 .contenido {
   display: flex;
