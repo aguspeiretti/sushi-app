@@ -5,6 +5,7 @@ import { data } from "../../productos";
 import Cards from "../Cards/Cards";
 import promotion from "../../assets/foodImg/promotion.png";
 import CardSug from "../CardSuggestion/CardSug";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -20,11 +21,17 @@ const Home = () => {
           <button className="category-button">Salads</button>
           <button className="category-button">Recomended</button>
         </div>
-        <div className="product-container">
-          {data.map((p) => (
-            <Cards product={p} />
-          ))}
-        </div>
+        <motion.div className="carrousel">
+          <motion.div
+            drag="x"
+            dragConstraints={{ right: 0, left: -960 }}
+            className="product-container"
+          >
+            {data.map((p) => (
+              <Cards product={p} />
+            ))}
+          </motion.div>
+        </motion.div>
       </div>
       <div className="second-seccion">
         <div className="day-sales">
