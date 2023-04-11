@@ -1,0 +1,31 @@
+.navBar-container {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(48, 48, 48);
+}
+.bars-menu {
+  padding-left: 15px;
+}
+.bars-menu svg {
+  color: #e7832b;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo-container span {
+  color: white;
+}
+
+.logo-container img {
+  width: 30px;
+}
+.sales {
+  padding-right: 15px;
+}
+.sales svg {
+  color: #e7832b;
+}
