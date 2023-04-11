@@ -9,9 +9,17 @@ const Home = () => {
     <div className="homeContainer">
       <Navbar />
       <div className="first-seccion">
+      <div className="categorys">
+        <button className="category-button special">All</button>
+        <button className="category-button">Rolls</button>
+        <button className="category-button">Salads</button>
+        <button className="category-button">recomended</button>
+        </div>
+        <div className="product-container">
         {data.map((p) => (
           <Cards product={p} />
         ))}
+        </div>       
       </div>
     </div>
   );

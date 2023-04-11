@@ -3,9 +3,13 @@
   height: 170px;
   border-radius: 15px;
   background-color: rgb(48, 48, 48);
+  margin-left: 15px;
+  cursor: pointer;
 }
 .contenido {
   display: flex;
+  width: 130px;
+  height: 160px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -13,9 +17,10 @@
 .img-product-container {
   display: flex;
   justify-content: center;
+  padding: 5px;
 }
 .img-product-container img {
-  width: 80%;
+  width: 85%;
 }
 .title-product-container {
   color: white;
