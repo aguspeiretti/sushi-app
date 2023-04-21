@@ -4,7 +4,8 @@ import { BiAlignLeft } from "react-icons/bi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
 import logo from "../../assets/sushilogo.png";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
+import Menu from "../Menu/Menu";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,13 +20,8 @@ export default function Navbar() {
         {/* <BiAlignLeft size={"22px"} /> */}
         {isOpen ? <FaTimes /> : <BiAlignLeft size={"22px"} />}
       </div>
-      <div className={`menu ${isOpen ? "active" : ""}`}>
-        <ul>
-          <li>link1</li>
-          <li>link2</li>
-          <li>link3</li>
-        </ul>
-      </div>
+
+      <Menu isOpen={isOpen} />
 
       <div className="logo-container">
         <img src={logo} alt="" />

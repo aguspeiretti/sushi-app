@@ -28,7 +28,7 @@ const Home = () => {
             className="product-container"
           >
             {data.map((p) => (
-              <Cards product={p} />
+              <Cards key={p.name} product={p} />
             ))}
           </motion.div>
         </motion.div>

@@ -15,7 +15,7 @@ const CardSug = ({ product }) => {
           <p className="orange">Price $: {product.price}</p>
         </div>
         <div className="arrow">
-          <BsChevronRight FiZap size={"28px"} color={"white"} />
+          <BsChevronRight size={"28px"} color={"white"} />
         </div>
       </div>
     </div>

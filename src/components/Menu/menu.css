@@ -1,0 +1,90 @@
+.menu {
+  position: absolute;
+  top: -1000px;
+  width: 220px;
+  height: 90%;
+
+  background-color: #e7832b;
+  border-radius: 10px;
+  box-shadow: 1px 3px 19px -3px #000000;
+  opacity: 0;
+  transform: scale(0.8);
+}
+.active {
+  top: 60px;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+  z-index: 100;
+}
+.userContainer {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 30px;
+}
+.profileImageContainer {
+  width: 90px;
+  height: 90px;
+  background-color: #000000;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 3px 19px -3px #000000;
+  box-shadow: 1px 3px 19px -3px #000000;
+}
+.addFoto {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(199, 197, 197);
+  top: 90px;
+  left: 130px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #000000;
+  -webkit-box-shadow: 1px 3px 19px -3px #000000;
+  box-shadow: 1px 3px 19px -3px #000000;
+}
+.addFoto p {
+  margin-bottom: 13px;
+  margin-left: 2px;
+}
+.profileImageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.userContainer p {
+  margin-top: 10px;
+  font-weight: 500;
+}
+.menuContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.menuContainer ul {
+  display: flex;
+  flex-direction: column;
+}
+.menuContainer ul li {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+.menuContainer ul li span {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.menuContainer ul li p {
+  font-size: 17px;
+  font-weight: 600px;
+}
