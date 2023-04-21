@@ -4,6 +4,7 @@ import Navbar from "../NavBar/Navbar";
 import { useParams } from "react-router";
 import { data } from "../../productos";
 import { BsChevronLeft } from "react-icons/bs";
+import { IoFishOutline } from "react-icons/io5";
 
 const ProductPage = ({ product }) => {
   const { name } = useParams();
@@ -28,15 +29,38 @@ const ProductPage = ({ product }) => {
         </div>
         <div className="infoContainer">
           <div className="info">
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            <p></p>
-            <button>hola</button>
+            <div>
+              <ul>
+                <li>
+                  <span>
+                    <IoFishOutline />
+                  </span>
+                  Queso crema
+                </li>
+                <li>
+                  <span>
+                    <IoFishOutline />
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <IoFishOutline />
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <IoFishOutline />
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <IoFishOutline />
+                  </span>
+                </li>
+              </ul>
+              <p></p>
+              <button>hola</button>
+            </div>
           </div>
         </div>
       </div>
