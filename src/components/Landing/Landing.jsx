@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./landing.css";
 import Presentation from "../Presentation/Presentation";
 import Home from "../Home/Home";
-import FoodMenu from "../foodMenu/FoodMenu";
 
 const Landing = () => {
   const [animation, setAnimation] = useState(true);

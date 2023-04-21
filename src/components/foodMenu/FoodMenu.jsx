@@ -5,7 +5,6 @@ import { data } from "../../productos";
 import CardMenu from "../CardMenu/CardMenu";
 
 const FoodMenu = () => {
-  console.log(data);
   return (
     <div className="foodContainer">
       <Navbar />
@@ -14,7 +13,7 @@ const FoodMenu = () => {
       </div>
       <div className="cardMenuContainer">
         {data.map((p) => (
-          <CardMenu product={p} />
+          <CardMenu key={p.name} product={p} />
         ))}
       </div>
     </div>

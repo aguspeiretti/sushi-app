@@ -1,8 +1,8 @@
 import "./App.css";
-import Home from "./components/Home/Home";
 import Landing from "./components/Landing/Landing";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import FoodMenu from "./components/foodMenu/FoodMenu";
+import ProductPage from "./components/Productpage/ProductPage";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/menu" element={<FoodMenu />} />
+          <Route path="/producto/:name" element={<ProductPage />} />
         </Routes>
       </Router>
     </div>
