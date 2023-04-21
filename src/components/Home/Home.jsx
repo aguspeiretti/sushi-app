@@ -19,7 +19,7 @@ const Home = () => {
           <button className="category-button special">All</button>
           <button className="category-button">Rolls</button>
           <button className="category-button">Salads</button>
-          <button className="category-button">Recomended</button>
+          <button className="category-button">Combos</button>
         </div>
         <motion.div className="carrousel">
           <motion.div
