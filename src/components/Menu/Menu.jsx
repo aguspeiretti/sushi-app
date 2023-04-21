@@ -7,6 +7,7 @@ import { AiFillHeart } from "react-icons/ai";
 import { BiDollar } from "react-icons/bi";
 import { IoIosExit } from "react-icons/io";
 import "./menu.css";
+import { Link } from "react-router-dom";
 
 function Menu({ isOpen }) {
   return (
@@ -22,12 +23,15 @@ function Menu({ isOpen }) {
       </div>
       <div className="menuContainer">
         <ul>
-          <li>
-            <span>
-              <BiHomeAlt2 />
-            </span>
-            <p>Inicio</p>
-          </li>
+          <Link to={"/"}>
+            {" "}
+            <li>
+              <span>
+                <BiHomeAlt2 />
+              </span>
+              <p>Inicio</p>
+            </li>
+          </Link>
           <li>
             <span>
               <BiCart />
@@ -40,12 +44,15 @@ function Menu({ isOpen }) {
             </span>
             <p>Favoritos</p>
           </li>
-          <li>
-            <span>
-              <BiDollar />
-            </span>
-            <p>Menu</p>
-          </li>
+          <Link to={"/menu"}>
+            {" "}
+            <li>
+              <span>
+                <BiDollar />
+              </span>
+              <p>Menu</p>
+            </li>
+          </Link>
           <li>
             <span>
               <BiAlignJustify />

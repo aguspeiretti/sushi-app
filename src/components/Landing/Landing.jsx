@@ -24,8 +24,7 @@ const Landing = () => {
         <Presentation />
       ) : (
         <div>
-          {/* <Home /> */}
-          <FoodMenu />
+          <Home />
         </div>
       )}
     </>
