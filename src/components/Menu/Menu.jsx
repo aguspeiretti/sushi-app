@@ -10,7 +10,7 @@ import "./menu.css";
 
 function Menu({ isOpen }) {
   return (
-    <div className={`menu ${isOpen ? "active" : ""}`}>
+    <div className={`menu ${isOpen ? "active" : "inactive"}`}>
       <div className="userContainer">
         <div className="addFoto">
           <p>+</p>
