@@ -10,7 +10,10 @@ import { motion } from "framer-motion";
 const Home = () => {
   return (
     <div className="homeContainer">
-      <Navbar />
+      <div className="navBarHome">
+        <Navbar />
+      </div>
+
       <div className="search">
         <input type="text" />
       </div>

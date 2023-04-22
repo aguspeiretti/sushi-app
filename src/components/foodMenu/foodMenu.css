@@ -1,5 +1,6 @@
 .foodContainer {
-    width: 360px;
+  width: 100vw;
+  max-width: 420px;
     height: 100vh;
     background-color: rgb(38, 38, 38);
     overflow-y:  scroll;

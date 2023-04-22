@@ -1,7 +1,11 @@
 .presentationContainer {
-  width: 360px;
+  width: 100vw;
+  max-width: 420px;
   height: 100vh;
   background-color: #181815;
+}
+.presentationContainer::-webkit-scrollbar {
+  display: none;
 }
 .gifContainer {
   width: 100%;

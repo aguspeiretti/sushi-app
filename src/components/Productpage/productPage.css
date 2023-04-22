@@ -1,28 +1,22 @@
 .productPageContainer {
-  width: 360px;
+  width: 100vw;
+  max-width: 420px;
   height: 100vh;
   background-color: #202020;
-  overflow: hidden;
+  overflow: scroll;
 }
-.search {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.productPageContainer::-webkit-scrollbar {
+  display: none;
 }
-.search input {
-  width: 90%;
-  height: 25px;
-  border-radius: 15px;
-  background-color: rgb(32, 32, 32);
-  border: none;
-}
+
 .imgContainer {
   width: 100%;
-  height: 100%;
+  height: 90%;
   margin-top: 20px;
   background-color: rgb(38, 38, 38);
   position: relative;
 }
+
 .nameContainer {
   display: flex;
   align-items: center;
@@ -30,31 +24,38 @@
   position: relative;
   padding-top: 30px;
 }
-.nameContainer span {
+.backArrow {
+  color: white;
+  font-size: 25px;
+  margin-top: -10px;
+  position: absolute;
+  left: 20px;
+}
+.favs{
   color: white;
   font-size: 25px;
   padding-top: 10px;
   position: absolute;
-  left: 20px;
+  right:  20px;
 }
 .nameContainer p {
   font-size: 30px;
   color: white;
 }
 .onliImg {
-  margin-top: 30px;
+  margin-top: 10px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 .infoContainer {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
 }
 .info {
-  background: rgba(105, 105, 105, 0.258);
+  background: rgba(98, 98, 98, 0.121);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   border-radius: 10px;
@@ -66,12 +67,76 @@
 }
 .info div {
   z-index: 100;
+  width: 100%;
+  height: 100%;
+  display: flex;
+ justify-content: start;
+ align-items: center;
+ flex-direction: column;
 }
+.info div ul{
+ 
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  ;
+}
+.info div ul p{
+  margin-top: 20px;
+  font-size: 30px;
+  color: #e7832b;
+}
+.buyButton{
+  margin-top: 20px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e7832b;
+  color: white;
+}
+.info div ul button p{
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 15px;
+}
+.info div ul button div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.info div ul button div button{
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 25px;
+}
+
 .info div ul li {
   list-style: none;
   color: white;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
 }
 .info div ul li span {
   color: #e7832b;
   font-size: 30px;
+  margin-right: 20px;
+  padding-top: 5px;
+
+}
+.nameType{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+}
+.nameType p{
+  font-weight: bolder;
 }
