@@ -23,7 +23,7 @@ function Menu({ isOpen }) {
       </div>
       <div className="menuContainer">
         <ul>
-          <Link to={"/"}>
+          <Link to={"/Home"}>
             {" "}
             <li>
               <span>
@@ -59,12 +59,14 @@ function Menu({ isOpen }) {
             </span>
             <p>Perfil</p>
           </li>
-          <li>
-            <span>
-              <IoIosExit />
-            </span>
-            <p>Salir</p>
-          </li>
+          <Link to={"/"}>
+            <li>
+              <span>
+                <IoIosExit />
+              </span>
+              <p>Salir</p>
+            </li>
+          </Link>
         </ul>
       </div>
       <div className="footerMenuContainer">
